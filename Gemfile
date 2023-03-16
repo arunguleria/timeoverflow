@@ -1,20 +1,20 @@
 source 'https://rubygems.org'
 
-ruby ">= #{File.read('.ruby-version').strip}"
+ruby File.read('.ruby-version').strip
 
-gem 'rails', '~> 6.1.1'
+gem 'rails', '~> 6.1.7'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'rdiscount', '~> 2.2.0.1'
 gem 'rubyzip', '~> 2.3.0'
 gem 'activeadmin', '~> 2.9.0'
-gem 'bootsnap', '~> 1.12.0', require: false
+gem 'bootsnap', '~> 1.16', require: false
 gem 'has_scope', '~> 0.7.2'
 gem 'pundit', '~> 2.1.0'
 gem 'pg', '~> 1.4'
 gem 'json_translate', '~> 4.0.0'
 gem 'devise', '~> 4.7.1'
 gem 'http_accept_language', '~> 2.1.1'
-gem 'unicorn', '~> 5.5.1'
+gem 'puma', '~> 6.1'
 gem 'kaminari', '~> 1.2.1'
 gem 'simple_form', '~> 5.0.2'
 gem 'rollbar', '~> 2.22.1'
@@ -35,13 +35,10 @@ gem 'uglifier', '~> 4.2.0'
 gem 'select2-rails', '~> 4.0.13'
 
 group :development do
-  gem 'listen', '~> 3.2.0'
   gem 'localeapp', '~> 3.1', require: false
   gem 'letter_opener', '~> 1.7.0'
   gem 'web-console', '~> 4.1.0'
-  gem 'capistrano', '~> 3.1'
-  gem 'capistrano-rails', '~> 1.1'
-  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'dockerfile-rails', '>= 1.2'
 end
 
 group :development, :test do
