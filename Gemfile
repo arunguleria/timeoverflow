@@ -38,7 +38,6 @@ group :development do
   gem 'localeapp', '~> 3.1', require: false
   gem 'letter_opener', '~> 1.7.0'
   gem 'web-console', '~> 4.1.0'
-  gem 'dockerfile-rails', '>= 1.2'
 end
 
 group :development, :test do
