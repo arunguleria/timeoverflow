@@ -433,6 +433,7 @@ DEPENDENCIES
   kaminari (~> 1.2.1)
   letter_opener (~> 1.7.0)
   localeapp (~> 3.1)
+  matrix
   pg (~> 1.4)
   pg_search (~> 2.3.5)
   prawn (~> 2.4.0)
@@ -460,9 +461,6 @@ DEPENDENCIES
   uglifier (~> 4.2.0)
   web-console (~> 4.1.0)
   webdrivers (~> 4.4)
-
-RUBY VERSION
-   ruby 3.1.3p185
 
 BUNDLED WITH
    2.1.4

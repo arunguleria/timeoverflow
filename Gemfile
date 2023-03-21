@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby File.read('.ruby-version').strip
-
 gem 'rails', '~> 6.1.7'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'rdiscount', '~> 2.2.0.1'
@@ -20,6 +18,7 @@ gem 'simple_form', '~> 5.0.2'
 gem 'rollbar', '~> 2.22.1'
 gem 'prawn', '~> 2.4.0'
 gem 'prawn-table', '~> 0.2.2'
+gem 'matrix' # Ruby 3.1 support for Prawn, see more: https://github.com/prawnpdf/prawn/issues/1195
 gem 'pg_search', '~> 2.3.5'
 gem 'skylight', '~> 5.0'
 gem 'sidekiq', '~> 6.4.0'
