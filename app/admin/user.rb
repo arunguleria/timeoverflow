@@ -77,6 +77,5 @@ ActiveAdmin.register User do
     end
   end
 
-  permit_params *User.attribute_names,
-                members_attributes: Member.attribute_names
+  # permit_params *User.attribute_names, members_attributes: Member.attribute_names
 end

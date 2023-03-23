@@ -46,5 +46,5 @@ ActiveAdmin.register Organization do
   filter :city, as: :select, collection: -> { Organization.pluck(:city).uniq }
   filter :neighborhood
 
-  permit_params *Organization.attribute_names
+  # permit_params *Organization.attribute_names
 end

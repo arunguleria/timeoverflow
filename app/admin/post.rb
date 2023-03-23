@@ -30,7 +30,7 @@ ActiveAdmin.register Post do
     f.actions
   end
 
-  permit_params :type, :tag_list, *Post.attribute_names
+  # permit_params :type, :tag_list, *Post.attribute_names
 
   filter :type, as: :select, collection: -> { Post.subclasses }
   filter :id
