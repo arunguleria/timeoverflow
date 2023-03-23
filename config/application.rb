@@ -29,12 +29,10 @@ module Timeoverflow
     config.active_record.schema_format = :sql
 
     # Guard against DNS rebinding attacks by permitting hosts
-    config.hosts << %w(
-      timeoverflow.local
-      staging.timeoverflow.org
-      www.timeoverflow.org
-      timeoverflow.org
-      rails-h9ir.onrender.com
-    )
+    config.hosts << 'timeoverflow.local'
+    config.hosts << 'staging.timeoverflow.org'
+    config.hosts << 'www.timeoverflow.org'
+    config.hosts << 'timeoverflow.org'
+    config.hosts << 'rails-h9ir.onrender.com'
   end
 end
