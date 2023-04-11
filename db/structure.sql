@@ -1209,6 +1209,13 @@ CREATE UNIQUE INDEX unique_schema_migrations ON public.schema_migrations USING b
 
 
 --
+-- Name: tsvectorupdate; Type: TRIGGER; Schema: public; Owner: -
+--
+
+CREATE TRIGGER tsvectorupdate BEFORE INSERT OR UPDATE ON public.posts FOR EACH ROW EXECUTE PROCEDURE public.posts_trigger();
+
+
+--
 -- Name: events events_member_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
